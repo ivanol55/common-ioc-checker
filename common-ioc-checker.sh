@@ -1,7 +1,7 @@
 #!/bin/bash
 # Variable configuration
 datetime=$(date +"%m-%d-%y_%H-%M")
-targetlog=/opt/log4j-checking-$datetime.log
+targetlog=/opt/common-ioc-checker-$datetime.log
 
 # Run with necessary permissions
 if [ "$EUID" -ne 0 ]
