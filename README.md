@@ -26,7 +26,7 @@ Any `debian`-based system using `systemd`. More checking and conditional configu
 - Existing `systemd` scheduled tasks
 - Startup files modified the last 10 days
 - Emptied `history` files in the entire system
-- `log4j`-vulnerable java libraries present in the system (will be removed in the near future)
+- `log4j`-vulnerable java libraries present in the system (depends on FoxIT's [log4j-finder python script](https://github.com/fox-it/log4j-finder.git))
 
 ## What are future plans on IoC detection development?
 - Adding support for `RHEL`/`centos` based systems
