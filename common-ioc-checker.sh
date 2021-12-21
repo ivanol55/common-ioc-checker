@@ -95,9 +95,9 @@ sudo echo "" >> $targetlog
 
 # Log4j binary scanning accross the system
 echo "Downloading log4j system scanner"
-curl -Ls https://github.com/fox-it/log4j-finder/releases/latest/download/log4j-finder -o log4j-finder
-sudo chmod +x log4j-finder
+git clone https://github.com/fox-it/log4j-finder.git
+cd log4j-finder
 echo "Checking for log4j binaries. This one may take a while..."
 sudo echo "################################### Check for log4j vulnerable binaries. Here's the list: " >> $targetlog
-sudo ./log4j-finder >> $targetlog
+sudo python3 log4j-finder.py >> $targetlog
 sudo echo "" >> $targetlog
